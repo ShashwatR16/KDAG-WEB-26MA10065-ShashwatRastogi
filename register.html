@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register — KDAG Bootcamp</title>
+<meta name="description" content="Register for the KDAG Beginner's Python & Data Analytics Bootcamp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">KD<span>AG</span></span>
+      <span class="brand-sub">BOOTCAMP · 2026</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#curriculum">Curriculum</a></li>
+      <li><a href="index.html#audience">Who it's for</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="index.html" class="btn btn-ghost">Back home</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  </div>
+</nav>
+
+<main class="reg-shell">
+  <div class="container">
+    <div class="reg-head">
+      <p class="kicker">STEP 1 OF 1</p>
+      <h1>Reserve your seat</h1>
+      <p>Fill this in with your institute details. You'll get a confirmation on the email you provide below.</p>
+    </div>
+
+    <div class="reg-layout">
+      <aside class="reg-aside">
+        <dl>
+          <dt>Event</dt>
+          <dd>Beginner's Python &amp; Data Analytics Bootcamp</dd>
+          <dt>Hosted by</dt>
+          <dd>Kharagpur Data Analytics Group</dd>
+          <dt>Dates</dt>
+          <dd>Oct 12&ndash;15</dd>
+          <dt>Cost</dt>
+          <dd>Free for students</dd>
+        </dl>
+      </aside>
+
+      <div class="card" id="regCard">
+        <div class="reg-card-head">
+          <h2 style="font-size:1.3rem;">Your details</h2>
+        </div>
+
+        <form id="regForm" novalidate>
+          <div class="field" id="fieldName">
+            <label for="fullName">Full name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="e.g. Ananya Sharma" autocomplete="name">
+            <p class="error-msg" id="errName"></p>
+          </div>
+
+          <div class="field" id="fieldRoll">
+            <label for="rollNumber">Roll number <span class="hint">9 characters</span></label>
+            <input type="text" id="rollNumber" name="rollNumber" placeholder="e.g. 26CS10001" maxlength="12" autocomplete="off">
+            <p class="error-msg" id="errRoll"></p>
+          </div>
+
+          <div class="field" id="fieldEmail">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@kgpian.iitkgp.ac.in" autocomplete="email">
+            <p class="error-msg" id="errEmail"></p>
+          </div>
+
+          <div class="field" id="fieldDept">
+            <label for="department">Department</label>
+            <select id="department" name="department">
+              <option value="" selected disabled>Select your department</option>
+              <option>Aerospace Engineering</option>
+              <option>Agricultural &amp; Food Engineering</option>
+              <option>Architecture &amp; Regional Planning</option>
+              <option>Biotechnology</option>
+              <option>Chemical Engineering</option>
+              <option>Chemistry</option>
+              <option>Civil Engineering</option>
+              <option>Computer Science &amp; Engineering</option>
+              <option>Electrical Engineering</option>
+              <option>Electronics &amp; Electrical Communication Engineering</option>
+              <option>Geology &amp; Geophysics</option>
+              <option>Humanities &amp; Social Sciences</option>
+              <option>Industrial &amp; Systems Engineering</option>
+              <option>Instrumentation Engineering</option>
+              <option>Materials Science</option>
+              <option>Mathematics &amp; Computing</option>
+              <option>Mechanical Engineering</option>
+              <option>Metallurgical &amp; Materials Engineering</option>
+              <option>Mining Engineering</option>
+              <option>Ocean Engineering &amp; Naval Architecture</option>
+              <option>Physics</option>
+              <option>Rubber Technology</option>
+              <option>VGSoM (Management)</option>
+              <option>Other</option>
+            </select>
+            <p class="error-msg" id="errDept"></p>
+          </div>
+
+          <div class="form-foot">
+            <p class="form-note">By registering you agree to receive event updates on the email above.</p>
+            <button type="submit" class="btn btn-primary">Register</button>
+          </div>
+        </form>
+
+        <div class="success-panel" id="successPanel">
+          <div class="ring">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+              <path d="M4 13l5 5L20 6" stroke="#4FE3C1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h2>Registration successful!</h2>
+          <p>Welcome to the Bootcamp — check your inbox for a confirmation with the schedule and setup guide.</p>
+          <span class="roll-echo" id="rollEcho"></span>
+          <a href="index.html" class="btn btn-ghost">Back to the event page</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Kharagpur Data Analytics Group &middot; IIT Kharagpur</p>
+    <ul class="footer-links">
+      <li><a href="index.html#curriculum">Curriculum</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script src="register.js"></script>
+</body>
+</html>
